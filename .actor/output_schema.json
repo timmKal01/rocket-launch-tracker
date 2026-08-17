@@ -1,0 +1,11 @@
+{
+    "actorOutputSchemaVersion": 1,
+    "title": "Output schema of Rocket Launch Tracker",
+    "properties": {
+        "results": {
+            "type": "string",
+            "title": "Launches",
+            "template": "{{links.apiDefaultDatasetUrl}}/items"
+        }
+    }
+}

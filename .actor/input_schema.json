@@ -1,0 +1,32 @@
+{
+    "title": "Rocket Launch Tracker Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "keyword": {
+            "title": "Keyword",
+            "type": "string",
+            "editor": "textfield",
+            "description": "Free-text search across mission name, rocket, and launch provider, e.g. \"SpaceX\" or \"Starlink\". Leave blank for every upcoming launch."
+        },
+        "daysAhead": {
+            "title": "Days ahead",
+            "type": "integer",
+            "editor": "number",
+            "description": "Only return launches scheduled within this many days from now.",
+            "default": 14,
+            "minimum": 1,
+            "maximum": 180
+        },
+        "maxResults": {
+            "title": "Max results",
+            "type": "integer",
+            "editor": "number",
+            "description": "Maximum number of launches to return.",
+            "default": 25,
+            "minimum": 1,
+            "maximum": 100
+        }
+    },
+    "required": []
+}

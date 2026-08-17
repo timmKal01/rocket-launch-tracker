@@ -1,0 +1,13 @@
+{
+    "actorSpecification": 1,
+    "name": "rocket-launch-tracker",
+    "title": "Rocket Launch Tracker",
+    "description": "Get upcoming orbital rocket launches worldwide via the public Launch Library 2 API: mission, rocket, launch provider, pad/location, launch window, and status. For aerospace, media, and space-industry teams tracking the launch manifest.",
+    "version": "0.1",
+    "meta": {
+        "templateId": "custom-no-proxy"
+    },
+    "input": "./input_schema.json",
+    "output": "./output_schema.json",
+    "dockerfile": "../Dockerfile"
+}
