@@ -1,0 +1,78 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": [
+                    "name",
+                    "status",
+                    "net",
+                    "provider",
+                    "rocket",
+                    "missionName",
+                    "missionType",
+                    "orbit",
+                    "padName",
+                    "location",
+                    "windowStart",
+                    "windowEnd"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "name": {
+                        "label": "Name",
+                        "format": "text"
+                    },
+                    "status": {
+                        "label": "Status",
+                        "format": "text"
+                    },
+                    "net": {
+                        "label": "Net",
+                        "format": "date"
+                    },
+                    "provider": {
+                        "label": "Provider",
+                        "format": "text"
+                    },
+                    "rocket": {
+                        "label": "Rocket",
+                        "format": "text"
+                    },
+                    "missionName": {
+                        "label": "Mission name",
+                        "format": "text"
+                    },
+                    "missionType": {
+                        "label": "Mission type",
+                        "format": "text"
+                    },
+                    "orbit": {
+                        "label": "Orbit",
+                        "format": "text"
+                    },
+                    "padName": {
+                        "label": "Pad name",
+                        "format": "text"
+                    },
+                    "location": {
+                        "label": "Location",
+                        "format": "text"
+                    },
+                    "windowStart": {
+                        "label": "Window start",
+                        "format": "date"
+                    },
+                    "windowEnd": {
+                        "label": "Window end",
+                        "format": "date"
+                    }
+                }
+            }
+        }
+    }
+}
