@@ -67,4 +67,4 @@ the search returns 0 launches or 100.
 
 ## Related products
 
-- [Space Weather Alert](https://github.com/timmKal01/space-weather-alert) — solar/geomagnetic conditions, not launch schedules
+- [Space Weather Alerts](https://apify.com/m_ctim/space-weather-alert): solar/geomagnetic conditions, not launch schedules
