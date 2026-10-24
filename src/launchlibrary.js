@@ -1,3 +1,7 @@
+// Some public APIs refuse requests that identify themselves only as Node's default "node" user agent (data.cms.gov
+// started doing so in October 2026), so every request says which tool is asking and where to find it.
+const USER_AGENT = 'rocket-launch-tracker/0.1 (+https://apify.com/m_ctim/rocket-launch-tracker)';
+
 const BASE_URL = 'https://ll.thespacedevs.com/2.2.0/launch/upcoming/';
 
 /** The free-tier API occasionally times out or 5xx's under load (observed live while building
@@ -7,7 +11,7 @@ async function fetchWithRetry(url, { retries = 4, baseDelayMs = 1000 } = {}) {
     let lastErr;
     for (let attempt = 0; attempt <= retries; attempt++) {
         try {
-            const res = await fetch(url, { headers: { Connection: 'close' } });
+            const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT, Connection: 'close' } });
             if (res.ok) return res;
             if (![429, 500, 502, 503, 504].includes(res.status)) {
                 throw new Error(`Launch Library API request failed: ${res.status} ${res.statusText}`);
